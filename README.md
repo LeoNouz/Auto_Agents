@@ -1,3 +1,4 @@
+# README in en-US
 # AI Content Generation System
 The AI Content Generation System is a Python-based application that allows users to collect information from the web, summarize it using ChatGPT, and generate AI-generated content for YouTube ideas and AI news. The system comprises several modules, including data collection, AI agent interactions, summarization, and email communication.
 
@@ -68,3 +69,76 @@ The AI Content Generation System is open-source software licensed under the MIT 
 Special thanks to OpenAI for providing access to the ChatGPT API and the community for valuable contributions and feedback.
 
 Feel free to reach out to the maintainers with any questions or feedback. We hope you find the AI Content Generation System useful and enjoy contributing to its development!
+
+
+# README em pt-BR
+# Sistema de Geração de Conteúdo com Inteligência Artificial
+O Sistema de Geração de Conteúdo com Inteligência Artificial é uma aplicação baseada em Python que permite aos usuários coletar informações da web, resumi-las usando o ChatGPT e gerar conteúdo produzido por IA para ideias de vídeos no YouTube e notícias sobre IA. O sistema é composto por vários módulos, incluindo coleta de dados, interações com o agente de IA, sumarização e comunicação por e-mail.
+
+## Recursos
+- Coleta consultas dos usuários e realiza uma busca no Google para obter informações relevantes.
+- Utiliza a API do ChatGPT da OpenAI para sumarização e reestruturação de texto.
+- Emprega os agentes de IA "Leo13" e "Leo30" para conversação e geração de conteúdo.
+- Fornece conteúdo para ideias de vídeos no YouTube e notícias sobre IA.
+- Envia o conteúdo gerado por e-mail para um destinatário especificado.
+
+## Pré-requisitos
+Antes de executar o sistema, certifique-se de ter os seguintes pré-requisitos:
+
+- 1. Python 3.10 instalado em seu sistema.
+- 2. Acesso à API do ChatGPT da OpenAI e uma chave de API.
+- 3. Pacote Python da OpenAI instalado (versão utilizada durante o desenvolvimento: openai==0.27.0).
+- 4. Uma conexão de internet ativa para realizar buscas no Google e interagir com a API do ChatGPT.
+
+## Instalação
+- 1. Clone este repositório em sua máquina local:
+  ```
+  git clone https://github.com/your-username/ai-content-generation.git
+  ```
+- 2. Navegue para o diretório do projeto:
+  ```
+  cd ai-content-generation
+  ```
+- 3. Instale as dependências Python necessárias:
+  ```
+  pip install -r requirements.txt
+  ```
+
+## Configuração
+Para configurar o sistema para o seu uso, siga estes passos:
+
+- 1. Abra o arquivo chatgpt_integration.py e substitua YOUR_OPENAI_API_KEY pela sua chave de API real do ChatGPT.
+- 2. No arquivo python_hub.py, configure os papéis dos agentes de IA alterando as variáveis leo13_role e leo30_role para "usuário" ou "sistema".
+- 3. Configure os detalhes do servidor de e-mail no arquivo send_email.py atualizando as variáveis smtp_server, smtp_port, smtp_username e smtp_password.
+- 4. Personalize o assunto do e-mail e o endereço de e-mail do destinatário na função run_python_hub() no arquivo python_hub.py.
+
+## Uso
+Para utilizar o Sistema de Geração de Conteúdo com Inteligência Artificial:
+
+- 1. Execute o script main.py:
+  ```
+  python main.py
+  ```
+- 2. Siga as instruções para fornecer sua consulta para a busca no Google.
+- 3. O sistema irá resumir os resultados da busca usando o ChatGPT.
+- 4. Os agentes de IA "Leo13" e "Leo30" irão se envolver em uma conversa para gerar conteúdo para ideias de vídeos no YouTube e notícias sobre IA.
+- 5. O conteúdo gerado será salvo nos arquivos data/Youtube_idea.txt e data/AI_news.txt.
+- 6. O sistema enviará o conteúdo gerado por e-mail para o destinatário especificado.
+
+## Contribuições
+Contribuições para o Sistema de Geração de Conteúdo com Inteligência Artificial são bem-vindas! Veja como você pode contribuir:
+
+- 1. Faça um fork do repositório no GitHub.
+- 2. Crie um novo branch a partir do branch principal com um nome descritivo para a sua funcionalidade ou correção.
+- 3. Implemente suas alterações, garantindo que sigam o estilo e as convenções de código existentes.
+- 4. Escreva testes unitários para o seu código para manter a qualidade do código.
+- 5. Abra um pull request contra o branch principal, descrevendo suas alterações e melhorias.
+- 6. Seu pull request será revisado pelos mantenedores e, após a aprovação, será mesclado no branch principal.
+
+## Licença
+O Sistema de Geração de Conteúdo com Inteligência Artificial é um software de código aberto licenciado sob a Licença MIT.
+
+## Agradecimentos
+Agradecemos à OpenAI por fornecer acesso à API do ChatGPT e à comunidade por suas valiosas contribuições e feedback.
+
+Sinta-se à vontade para entrar em contato com os mantenedores se tiver alguma dúvida ou feedback. Esperamos que você ache o Sistema de Geração de Conteúdo com Inteligência Artificial útil e desfrute de contribuir para o seu desenvolvimento!
